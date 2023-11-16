@@ -1,5 +1,4 @@
 # django-crud
+creating a simple CRUD app using Django 
 
-Creating a simple CRUD app using django for future usage
-
-This project is for learning purposes, potentially be used in the future
+This project is for learning purpose for django database

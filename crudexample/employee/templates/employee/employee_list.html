@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h2>Employee List</h2>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Contact</th>
+        <th>Action</th>
+    </tr>
+    {% for employee in employee_list %}
+    <tr>
+        <td> {{ employee.eid }} </td>
+        <td> {{ employee.ename }} </td>
+        <td> {{ employee.eemail }} </td>
+        <td> {{ employee.econtact }} </td>
+        <td>
+            <a href="">Edit </a>
+            <a href="">Delete </a>
+        </td>
+    </tr>
+    {% empty %}
+    <tr><td>NO EMPLOYEE FOUND</td></tr>
+    {% endfor %}
+</table>
+
+{% endblock %}
