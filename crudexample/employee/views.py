@@ -23,6 +23,8 @@ def employee_add_or_update(request, id=0):
             form = EmployeeForm(request.POST)
         else:
             employee = Employee.objects.get(pk=id)
+            print(employee.name)
+            print(employee.id)
             form = EmployeeForm(request.POST, instance=employee)
 
         if form.is_valid():
