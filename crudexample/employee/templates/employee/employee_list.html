@@ -19,7 +19,7 @@
         <td> {{ employee.econtact }} </td>
         <td>
             <a href="{% url 'employee_update' employee.id %}">Edit </a>
-            <a href="">Delete </a>
+            <a href="{% url 'employee_delete' employee.id %}" onclick="return confirm('Are you sure you want to delete this employee?')">Delete</a </a>
         </td>
     </tr>
     {% empty %}
