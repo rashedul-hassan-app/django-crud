@@ -10,10 +10,11 @@
         <h1>Employee Management</h1>
         <nav>
             <a href="{% url 'employee_list' %}">View All</a>
+            <a href="{% url 'employee_add_or_update' %}">Add</a>
         </nav>
     </header>
     {% block content %}
-    
+
     {% endblock %}
 </body>
 </html>
